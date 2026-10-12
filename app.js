@@ -7,7 +7,7 @@
 
 const CONFIG = {
   nome: "Brasa Burger",
-  whatsapp: "5511999999999"
+  whatsapp: "5511912345678"
 };
 
 // Substitua o número acima pelo WhatsApp real
