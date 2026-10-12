@@ -5,423 +5,429 @@
 // CONFIGURAÇÕES DA HAMBURGUERIA
 // ========================================
 
-// Substitua pelo WhatsApp real do estabelecimento.
-// Formato: 55 + DDD + número, sem espaços.
 const CONFIG = {
-    whatsapp: "5511987654321",
-    nome: "Brasa Burger"
+  nome: "Brasa Burger",
+  whatsapp: "5511999999999"
 };
+
+// Substitua o número acima pelo WhatsApp real
+// da hamburgueria, incluindo 55 + DDD + número.
 
 // ========================================
 // CARDÁPIO COMPLETO — 39 PRODUTOS
 // ========================================
 
 const produtos = [
-    // HAMBÚRGUERES
-    {
-        id: 1,
-        nome: "Brasa Clássico",
-        categoria: "burgers",
-        preco: 29.90,
-        descricao: "Pão brioche, carne 160g, cheddar, alface e molho especial.",
-        emoji: "🍔",
-        tag: "Mais pedido",
-        cor: "gold"
-    },
-    {
-        id: 2,
-        nome: "Duplo Smash",
-        categoria: "burgers",
-        preco: 36.90,
-        descricao: "Dois smash burgers, cheddar duplo e maionese da casa.",
-        emoji: "🍔",
-        tag: "Favorito",
-        cor: "orange"
-    },
-    {
-        id: 3,
-        nome: "Bacon Fire",
-        categoria: "burgers",
-        preco: 39.90,
-        descricao: "Burger 180g, bacon crocante, queijo e barbecue.",
-        emoji: "🥓",
-        tag: "Especial",
-        cor: "red"
-    },
-    {
-        id: 9,
-        nome: "Cheddar Melt",
-        categoria: "burgers",
-        preco: 34.90,
-        descricao: "Burger artesanal com cheddar cremoso e cebola caramelizada.",
-        emoji: "🧀",
-        tag: "Novo",
-        cor: "gold"
-    },
-    {
-        id: 10,
-        nome: "Chicken Crispy",
-        categoria: "burgers",
-        preco: 32.90,
-        descricao: "Frango crocante, alface, picles e maionese temperada.",
-        emoji: "🍗",
-        tag: "Crocante",
-        cor: "orange"
-    },
-    {
-        id: 11,
-        nome: "Veggie Brasa",
-        categoria: "burgers",
-        preco: 33.90,
-        descricao: "Burger vegetal, tomate, alface e molho especial.",
-        emoji: "🥬",
-        tag: "Vegetariano",
-        cor: "gold"
-    },
-    {
-        id: 12,
-        nome: "Brasa BBQ",
-        categoria: "burgers",
-        preco: 42.90,
-        descricao: "Burger 180g, bacon, queijo prato e barbecue.",
-        emoji: "🍔",
-        tag: "Premium",
-        cor: "red"
-    },
-    {
-        id: 13,
-        nome: "Triplo Smash",
-        categoria: "burgers",
-        preco: 45.90,
-        descricao: "Três carnes smash, cheddar e molho da casa.",
-        emoji: "🍔",
-        tag: "Gigante",
-        cor: "orange"
-    },
-    {
-        id: 14,
-        nome: "Brasa Picante",
-        categoria: "burgers",
-        preco: 38.90,
-        descricao: "Burger 160g, jalapeño, cheddar e maionese apimentada.",
-        emoji: "🌶️",
-        tag: "Picante",
-        cor: "red"
-    },
+  // 1. HAMBÚRGUERES
 
-    // COMBOS
-    {
-        id: 4,
-        nome: "Combo Brasa",
-        categoria: "combos",
-        preco: 47.90,
-        descricao: "Brasa Clássico, batata individual e refrigerante lata.",
-        emoji: "🍔",
-        tag: "Combo",
-        cor: "gold"
-    },
-    {
-        id: 5,
-        nome: "Combo Duplo",
-        categoria: "combos",
-        preco: 54.90,
-        descricao: "Duplo Smash, batata individual e refrigerante lata.",
-        emoji: "🍟",
-        tag: "Combo",
-        cor: "orange"
-    },
-    {
-        id: 15,
-        nome: "Combo Chicken",
-        categoria: "combos",
-        preco: 44.90,
-        descricao: "Chicken Crispy, batata e refrigerante lata.",
-        emoji: "🍗",
-        tag: "Combo",
-        cor: "gold"
-    },
-    {
-        id: 16,
-        nome: "Combo Família",
-        categoria: "combos",
-        preco: 119.90,
-        descricao: "Dois Brasa Clássico, duas batatas e dois refrigerantes.",
-        emoji: "🍔",
-        tag: "Família",
-        cor: "orange"
-    },
-    {
-        id: 17,
-        nome: "Combo Veggie",
-        categoria: "combos",
-        preco: 45.90,
-        descricao: "Veggie Brasa, batata individual e refrigerante.",
-        emoji: "🥬",
-        tag: "Combo",
-        cor: "gold"
-    },
+  {
+    id: 1,
+    nome: "Brasa Clássico",
+    categoria: "burgers",
+    preco: 29.90,
+    descricao: "Pão brioche, carne 160g, cheddar, alface e molho especial.",
+    emoji: "🍔",
+    tag: "Mais pedido",
+    cor: "gold"
+  },
+  {
+    id: 2,
+    nome: "Duplo Smash",
+    categoria: "burgers",
+    preco: 36.90,
+    descricao: "Dois hambúrgueres smash, cheddar duplo e maionese da casa.",
+    emoji: "🍔",
+    tag: "Favorito",
+    cor: "orange"
+  },
+  {
+    id: 3,
+    nome: "Bacon Fire",
+    categoria: "burgers",
+    preco: 39.90,
+    descricao: "Hambúrguer 180g, bacon crocante, queijo e barbecue.",
+    emoji: "🍔",
+    tag: "Especial",
+    cor: "red"
+  },
+  {
+    id: 4,
+    nome: "Cheddar Melt",
+    categoria: "burgers",
+    preco: 34.90,
+    descricao: "Hambúrguer artesanal com cheddar cremoso e cebola caramelizada.",
+    emoji: "🍔",
+    tag: "Novo",
+    cor: "gold"
+  },
+  {
+    id: 5,
+    nome: "Chicken Crispy",
+    categoria: "burgers",
+    preco: 32.90,
+    descricao: "Hambúrguer de frango crocante, alface, picles e maionese temperada.",
+    emoji: "🍔",
+    tag: "Crocante",
+    cor: "orange"
+  },
+  {
+    id: 6,
+    nome: "Veggie Brasa",
+    categoria: "burgers",
+    preco: 33.90,
+    descricao: "Hambúrguer vegetal, tomate, alface e molho especial.",
+    emoji: "🍔",
+    tag: "Vegetariano",
+    cor: "gold"
+  },
+  {
+    id: 7,
+    nome: "Brasa BBQ",
+    categoria: "burgers",
+    preco: 42.90,
+    descricao: "Hambúrguer 180g, bacon, queijo prato e barbecue.",
+    emoji: "🍔",
+    tag: "Premium",
+    cor: "red"
+  },
+  {
+    id: 8,
+    nome: "Triplo Smash",
+    categoria: "burgers",
+    preco: 45.90,
+    descricao: "Três carnes smash, cheddar e molho da casa.",
+    emoji: "🍔",
+    tag: "Gigante",
+    cor: "orange"
+  },
+  {
+    id: 9,
+    nome: "Brasa Picante",
+    categoria: "burgers",
+    preco: 38.90,
+    descricao: "Hambúrguer 160g, jalapeño, cheddar e maionese apimentada.",
+    emoji: "🍔",
+    tag: "Picante",
+    cor: "red"
+  },
 
-    // ACOMPANHAMENTOS
-    {
-        id: 6,
-        nome: "Batata Crocante",
-        categoria: "acompanhamentos",
-        preco: 17.90,
-        descricao: "Batatas douradas, sequinhas e crocantes.",
-        emoji: "🍟",
-        tag: "Crocante",
-        cor: "gold"
-    },
-    {
-        id: 7,
-        nome: "Onion Rings",
-        categoria: "acompanhamentos",
-        preco: 19.90,
-        descricao: "Anéis de cebola empanados com molho especial.",
-        emoji: "🧅",
-        tag: "Especial",
-        cor: "orange"
-    },
-    {
-        id: 18,
-        nome: "Batata Cheddar e Bacon",
-        categoria: "acompanhamentos",
-        preco: 25.90,
-        descricao: "Batatas crocantes com cheddar cremoso e bacon.",
-        emoji: "🍟",
-        tag: "Mais pedido",
-        cor: "orange"
-    },
-    {
-        id: 19,
-        nome: "Nuggets de Frango",
-        categoria: "acompanhamentos",
-        preco: 21.90,
-        descricao: "Nuggets crocantes acompanhados de molho.",
-        emoji: "🍗",
-        tag: "Porção",
-        cor: "gold"
-    },
-    {
-        id: 20,
-        nome: "Mozzarella Sticks",
-        categoria: "acompanhamentos",
-        preco: 24.90,
-        descricao: "Palitos de queijo empanados e crocantes.",
-        emoji: "🧀",
-        tag: "Especial",
-        cor: "orange"
-    },
+  // 2. COMBOS
 
-    // REFRIGERANTES EM LATA
-    {
-        id: 8,
-        nome: "Coca-Cola Lata 350ml",
-        categoria: "bebidas",
-        preco: 7.90,
-        descricao: "Coca-Cola original, lata de 350ml.",
-        emoji: "🥤",
-        tag: "Geladinho",
-        cor: "red"
-    },
-    {
-        id: 29,
-        nome: "Coca-Cola Zero 350ml",
-        categoria: "bebidas",
-        preco: 7.90,
-        descricao: "Coca-Cola sem açúcar, lata de 350ml.",
-        emoji: "🥤",
-        tag: "Zero açúcar",
-        cor: "red"
-    },
-    {
-        id: 30,
-        nome: "Guaraná Antarctica 350ml",
-        categoria: "bebidas",
-        preco: 7.90,
-        descricao: "Refrigerante de guaraná, lata de 350ml.",
-        emoji: "🥤",
-        tag: "Geladinho",
-        cor: "gold"
-    },
-    {
-        id: 31,
-        nome: "Fanta Laranja 350ml",
-        categoria: "bebidas",
-        preco: 7.90,
-        descricao: "Refrigerante sabor laranja, lata de 350ml.",
-        emoji: "🍊",
-        tag: "Laranja",
-        cor: "orange"
-    },
-    {
-        id: 32,
-        nome: "Fanta Uva 350ml",
-        categoria: "bebidas",
-        preco: 7.90,
-        descricao: "Refrigerante sabor uva, lata de 350ml.",
-        emoji: "🍇",
-        tag: "Uva",
-        cor: "red"
-    },
-    {
-        id: 33,
-        nome: "Sprite 350ml",
-        categoria: "bebidas",
-        preco: 7.90,
-        descricao: "Refrigerante sabor limão, lata de 350ml.",
-        emoji: "🍋",
-        tag: "Limão",
-        cor: "gold"
-    },
+  {
+    id: 10,
+    nome: "Combo Brasa",
+    categoria: "combos",
+    preco: 47.90,
+    descricao: "Brasa Clássico, batata individual e refrigerante lata.",
+    emoji: "🍔🍟🥤",
+    tag: "Combo",
+    cor: "gold"
+  },
+  {
+    id: 11,
+    nome: "Combo Duplo",
+    categoria: "combos",
+    preco: 54.90,
+    descricao: "Duplo Smash, batata individual e refrigerante lata.",
+    emoji: "🍔🍟🥤",
+    tag: "Combo",
+    cor: "orange"
+  },
+  {
+    id: 12,
+    nome: "Combo Chicken",
+    categoria: "combos",
+    preco: 44.90,
+    descricao: "Chicken Crispy, batata individual e refrigerante lata.",
+    emoji: "🍔🍟🥤",
+    tag: "Combo",
+    cor: "gold"
+  },
+  {
+    id: 13,
+    nome: "Combo Família",
+    categoria: "combos",
+    preco: 119.90,
+    descricao: "Dois Brasa Clássico, duas batatas e dois refrigerantes.",
+    emoji: "🍔🍟🥤",
+    tag: "Família",
+    cor: "orange"
+  },
+  {
+    id: 14,
+    nome: "Combo Veggie",
+    categoria: "combos",
+    preco: 45.90,
+    descricao: "Veggie Brasa, batata individual e refrigerante lata.",
+    emoji: "🍔🍟🥤",
+    tag: "Combo",
+    cor: "gold"
+  },
 
-    // REFRIGERANTES DE 2 LITROS
-    {
-        id: 24,
-        nome: "Coca-Cola 2 Litros",
-        categoria: "bebidas",
-        preco: 14.90,
-        descricao: "Coca-Cola original, garrafa de 2 litros.",
-        emoji: "🥤",
-        tag: "Família",
-        cor: "red"
-    },
-    {
-        id: 34,
-        nome: "Guaraná Antarctica 2 Litros",
-        categoria: "bebidas",
-        preco: 13.90,
-        descricao: "Refrigerante de guaraná, garrafa de 2 litros.",
-        emoji: "🥤",
-        tag: "Família",
-        cor: "gold"
-    },
-    {
-        id: 35,
-        nome: "Fanta Laranja 2 Litros",
-        categoria: "bebidas",
-        preco: 13.90,
-        descricao: "Refrigerante sabor laranja, garrafa de 2 litros.",
-        emoji: "🍊",
-        tag: "Família",
-        cor: "orange"
-    },
+  // 3. ACOMPANHAMENTOS
 
-    // ÁGUA E SUCOS NATURAIS
-    {
-        id: 21,
-        nome: "Água Mineral 500ml",
-        categoria: "bebidas",
-        preco: 5.90,
-        descricao: "Água mineral 500ml, com ou sem gás.",
-        emoji: "💧",
-        tag: "Refrescante",
-        cor: "gold"
-    },
-    {
-        id: 22,
-        nome: "Suco de Laranja 300ml",
-        categoria: "bebidas",
-        preco: 10.90,
-        descricao: "Suco natural de laranja.",
-        emoji: "🍊",
-        tag: "Natural",
-        cor: "orange"
-    },
-    {
-        id: 36,
-        nome: "Suco de Maracujá 300ml",
-        categoria: "bebidas",
-        preco: 11.90,
-        descricao: "Suco natural de maracujá.",
-        emoji: "🥭",
-        tag: "Natural",
-        cor: "gold"
-    },
-    {
-        id: 37,
-        nome: "Suco de Morango 300ml",
-        categoria: "bebidas",
-        preco: 12.90,
-        descricao: "Suco natural de morango.",
-        emoji: "🍓",
-        tag: "Natural",
-        cor: "red"
-    },
-    {
-        id: 38,
-        nome: "Suco de Abacaxi 300ml",
-        categoria: "bebidas",
-        preco: 10.90,
-        descricao: "Suco natural de abacaxi.",
-        emoji: "🍍",
-        tag: "Natural",
-        cor: "gold"
-    },
+  {
+    id: 15,
+    nome: "Batata Crocante",
+    categoria: "acompanhamentos",
+    preco: 17.90,
+    descricao: "Batatas douradas, sequinhas e crocantes.",
+    emoji: "🍟",
+    tag: "Crocante",
+    cor: "gold"
+  },
+  {
+    id: 16,
+    nome: "Onion Rings",
+    categoria: "acompanhamentos",
+    preco: 19.90,
+    descricao: "Anéis de cebola empanados com molho especial.",
+    emoji: "🧅",
+    tag: "Especial",
+    cor: "orange"
+  },
+  {
+    id: 17,
+    nome: "Batata Cheddar e Bacon",
+    categoria: "acompanhamentos",
+    preco: 25.90,
+    descricao: "Batatas crocantes com cheddar cremoso e bacon.",
+    emoji: "🍟",
+    tag: "Mais pedido",
+    cor: "orange"
+  },
+  {
+    id: 18,
+    nome: "Nuggets de Frango",
+    categoria: "acompanhamentos",
+    preco: 21.90,
+    descricao: "Nuggets crocantes acompanhados de molho.",
+    emoji: "🍗",
+    tag: "Porção",
+    cor: "gold"
+  },
+  {
+    id: 19,
+    nome: "Mozzarella Sticks",
+    categoria: "acompanhamentos",
+    preco: 24.90,
+    descricao: "Palitos de queijo empanados e crocantes.",
+    emoji: "🧀",
+    tag: "Especial",
+    cor: "orange"
+  },
 
-    // MILK-SHAKES
-    {
-        id: 23,
-        nome: "Milk-shake Chocolate 400ml",
-        categoria: "bebidas",
-        preco: 19.90,
-        descricao: "Milk-shake cremoso sabor chocolate.",
-        emoji: "🍫",
-        tag: "Milk-shake",
-        cor: "red"
-    },
-    {
-        id: 28,
-        nome: "Milk-shake Morango 400ml",
-        categoria: "bebidas",
-        preco: 19.90,
-        descricao: "Milk-shake cremoso sabor morango.",
-        emoji: "🍓",
-        tag: "Milk-shake",
-        cor: "red"
-    },
-    {
-        id: 39,
-        nome: "Milk-shake Baunilha 400ml",
-        categoria: "bebidas",
-        preco: 19.90,
-        descricao: "Milk-shake cremoso sabor baunilha.",
-        emoji: "🥛",
-        tag: "Milk-shake",
-        cor: "gold"
-    },
+  // 4. BEBIDAS — REFRIGERANTES
 
-    // SOBREMESAS
-    {
-        id: 25,
-        nome: "Brownie com Sorvete",
-        categoria: "sobremesas",
-        preco: 22.90,
-        descricao: "Brownie de chocolate acompanhado de sorvete.",
-        emoji: "🍫",
-        tag: "Sobremesa",
-        cor: "red"
-    },
-    {
-        id: 26,
-        nome: "Petit Gâteau",
-        categoria: "sobremesas",
-        preco: 25.90,
-        descricao: "Bolinho de chocolate cremoso com sorvete.",
-        emoji: "🍰",
-        tag: "Especial",
-        cor: "orange"
-    },
-    {
-        id: 27,
-        nome: "Cookie Recheado",
-        categoria: "sobremesas",
-        preco: 12.90,
-        descricao: "Cookie com gotas de chocolate e recheio cremoso.",
-        emoji: "🍪",
-        tag: "Doce",
-        cor: "gold"
-    }
+  {
+    id: 20,
+    nome: "Coca-Cola Lata 350ml",
+    categoria: "bebidas",
+    preco: 7.90,
+    descricao: "Coca-Cola original, lata de 350ml.",
+    emoji: "🥤",
+    tag: "Geladinho",
+    cor: "red"
+  },
+  {
+    id: 21,
+    nome: "Coca-Cola Zero 350ml",
+    categoria: "bebidas",
+    preco: 7.90,
+    descricao: "Coca-Cola sem açúcar, lata de 350ml.",
+    emoji: "🥤",
+    tag: "Zero açúcar",
+    cor: "red"
+  },
+  {
+    id: 22,
+    nome: "Guaraná Antarctica 350ml",
+    categoria: "bebidas",
+    preco: 7.90,
+    descricao: "Refrigerante de guaraná, lata de 350ml.",
+    emoji: "🥤",
+    tag: "Geladinho",
+    cor: "gold"
+  },
+  {
+    id: 23,
+    nome: "Fanta Laranja 350ml",
+    categoria: "bebidas",
+    preco: 7.90,
+    descricao: "Refrigerante sabor laranja, lata de 350ml.",
+    emoji: "🥤",
+    tag: "Laranja",
+    cor: "orange"
+  },
+  {
+    id: 24,
+    nome: "Fanta Uva 350ml",
+    categoria: "bebidas",
+    preco: 7.90,
+    descricao: "Refrigerante sabor uva, lata de 350ml.",
+    emoji: "🥤",
+    tag: "Uva",
+    cor: "red"
+  },
+  {
+    id: 25,
+    nome: "Sprite 350ml",
+    categoria: "bebidas",
+    preco: 7.90,
+    descricao: "Refrigerante sabor limão, lata de 350ml.",
+    emoji: "🥤",
+    tag: "Limão",
+    cor: "gold"
+  },
+  {
+    id: 26,
+    nome: "Coca-Cola 2 Litros",
+    categoria: "bebidas",
+    preco: 14.90,
+    descricao: "Coca-Cola original, garrafa de 2 litros.",
+    emoji: "🥤",
+    tag: "Família",
+    cor: "red"
+  },
+  {
+    id: 27,
+    nome: "Guaraná Antarctica 2 Litros",
+    categoria: "bebidas",
+    preco: 13.90,
+    descricao: "Refrigerante de guaraná, garrafa de 2 litros.",
+    emoji: "🥤",
+    tag: "Família",
+    cor: "gold"
+  },
+  {
+    id: 28,
+    nome: "Fanta Laranja 2 Litros",
+    categoria: "bebidas",
+    preco: 13.90,
+    descricao: "Refrigerante sabor laranja, garrafa de 2 litros.",
+    emoji: "🥤",
+    tag: "Família",
+    cor: "orange"
+  },
+
+  // ÁGUA E SUCOS
+
+  {
+    id: 29,
+    nome: "Água Mineral 500ml",
+    categoria: "bebidas",
+    preco: 5.90,
+    descricao: "Água mineral 500ml, com ou sem gás.",
+    emoji: "💧",
+    tag: "Refrescante",
+    cor: "gold"
+  },
+  {
+    id: 30,
+    nome: "Suco de Laranja 300ml",
+    categoria: "bebidas",
+    preco: 10.90,
+    descricao: "Suco natural de laranja.",
+    emoji: "🥤",
+    tag: "Natural",
+    cor: "orange"
+  },
+  {
+    id: 31,
+    nome: "Suco de Maracujá 300ml",
+    categoria: "bebidas",
+    preco: 11.90,
+    descricao: "Suco natural de maracujá.",
+    emoji: "🥤",
+    tag: "Natural",
+    cor: "gold"
+  },
+  {
+    id: 32,
+    nome: "Suco de Morango 300ml",
+    categoria: "bebidas",
+    preco: 12.90,
+    descricao: "Suco natural de morango.",
+    emoji: "🥤",
+    tag: "Natural",
+    cor: "red"
+  },
+  {
+    id: 33,
+    nome: "Suco de Abacaxi 300ml",
+    categoria: "bebidas",
+    preco: 10.90,
+    descricao: "Suco natural de abacaxi.",
+    emoji: "🥤",
+    tag: "Natural",
+    cor: "gold"
+  },
+
+  // MILK-SHAKES
+
+  {
+    id: 34,
+    nome: "Milk-shake Chocolate 400ml",
+    categoria: "bebidas",
+    preco: 19.90,
+    descricao: "Milk-shake cremoso sabor chocolate.",
+    emoji: "🥤",
+    tag: "Milk-shake",
+    cor: "red"
+  },
+  {
+    id: 35,
+    nome: "Milk-shake Morango 400ml",
+    categoria: "bebidas",
+    preco: 19.90,
+    descricao: "Milk-shake cremoso sabor morango.",
+    emoji: "🥤",
+    tag: "Milk-shake",
+    cor: "red"
+  },
+  {
+    id: 36,
+    nome: "Milk-shake Baunilha 400ml",
+    categoria: "bebidas",
+    preco: 19.90,
+    descricao: "Milk-shake cremoso sabor baunilha.",
+    emoji: "🥤",
+    tag: "Milk-shake",
+    cor: "gold"
+  },
+
+  // 5. SOBREMESAS
+
+  {
+    id: 37,
+    nome: "Brownie com Sorvete",
+    categoria: "sobremesas",
+    preco: 22.90,
+    descricao: "Brownie de chocolate acompanhado de sorvete.",
+    emoji: "🍫🍨",
+    tag: "Sobremesa",
+    cor: "red"
+  },
+  {
+    id: 38,
+    nome: "Petit Gâteau",
+    categoria: "sobremesas",
+    preco: 25.90,
+    descricao: "Bolinho de chocolate cremoso com sorvete.",
+    emoji: "🍰🍨",
+    tag: "Especial",
+    cor: "orange"
+  },
+  {
+    id: 39,
+    nome: "Cookie Recheado",
+    categoria: "sobremesas",
+    preco: 12.90,
+    descricao: "Cookie com gotas de chocolate e recheio cremoso.",
+    emoji: "🍪",
+    tag: "Doce",
+    cor: "gold"
+  }
 ];
 
 // ========================================
@@ -443,55 +449,67 @@ let carrinho = carregarCarrinho();
 let toastTimer;
 
 // ========================================
-// FORMATAÇÃO DE PREÇOS
+// UTILITÁRIOS
 // ========================================
 
 function dinheiro(valor) {
-    return valor.toLocaleString("pt-BR", {
-        style: "currency",
-        currency: "BRL"
-    });
+  return valor.toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL"
+  });
+}
+
+function escaparHTML(texto) {
+  return String(texto).replace(/[&<>"']/g, caractere => {
+    const entidades = {
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;"
+    };
+
+    return entidades[caractere];
+  });
 }
 
 // ========================================
-// EXIBIR PRODUTOS
+// RENDERIZAR PRODUTOS
 // ========================================
 
 function renderizarProdutos() {
-    const busca = searchInput.value
-        .toLocaleLowerCase("pt-BR")
-        .trim();
+  const busca = searchInput.value
+    .toLocaleLowerCase("pt-BR")
+    .trim();
 
-    const filtrados = produtos.filter(produto => {
-        const categoriaValida =
-            categoriaAtual === "todos" ||
-            produto.categoria === categoriaAtual;
+  const filtrados = produtos.filter(produto => {
+    const categoriaValida =
+      categoriaAtual === "todos" ||
+      produto.categoria === categoriaAtual;
 
-        const texto = (
-            produto.nome + " " + produto.descricao
-        ).toLocaleLowerCase("pt-BR");
+    const texto = (
+      produto.nome + " " + produto.descricao
+    ).toLocaleLowerCase("pt-BR");
 
-        return categoriaValida && texto.includes(busca);
-    });
+    return categoriaValida && texto.includes(busca);
+  });
 
-    grid.innerHTML = filtrados.map(produto => `
+  grid.innerHTML = filtrados.map(produto => `
     <article class="product-card">
       <div class="product-image ${produto.cor}">
-        <span class="tag">${produto.tag}</span>
-        <span class="emoji" aria-hidden="true">
-          ${produto.emoji}
-        </span>
+        <span class="tag">${escaparHTML(produto.tag)}</span>
+        <span class="emoji" aria-hidden="true">${produto.emoji}</span>
       </div>
 
       <div class="product-info">
-        <h3>${produto.nome}</h3>
-        <p>${produto.descricao}</p>
+        <h3>${escaparHTML(produto.nome)}</h3>
+        <p>${escaparHTML(produto.descricao)}</p>
 
         <div class="product-bottom">
           <strong>${dinheiro(produto.preco)}</strong>
-
           <button
             class="add-btn"
+            type="button"
             data-add="${produto.id}"
           >
             Adicionar +
@@ -501,165 +519,174 @@ function renderizarProdutos() {
     </article>
   `).join("");
 
-    document.getElementById("emptyMessage").hidden =
-        filtrados.length > 0;
+  const emptyMessage = document.getElementById("emptyMessage");
+
+  if (emptyMessage) {
+    emptyMessage.hidden = filtrados.length > 0;
+  }
 }
 
 // ========================================
-// FILTRAR CATEGORIAS
+// FILTROS E PESQUISA
 // ========================================
 
 filters.addEventListener("click", evento => {
-    const botao = evento.target.closest("[data-category]");
+  const botao = evento.target.closest("[data-category]");
 
-    if (!botao) return;
+  if (!botao) return;
 
-    categoriaAtual = botao.dataset.category;
+  categoriaAtual = botao.dataset.category;
 
-    document.querySelectorAll(".filter").forEach(item => {
-        item.classList.toggle("active", item === botao);
-    });
+  document.querySelectorAll(".filter").forEach(item => {
+    item.classList.toggle("active", item === botao);
+  });
 
-    renderizarProdutos();
+  renderizarProdutos();
 });
 
-// PESQUISA DE PRODUTOS
 searchInput.addEventListener("input", renderizarProdutos);
 
 // ========================================
-// ADICIONAR PRODUTO AO CARRINHO
+// ADICIONAR PRODUTOS AO CARRINHO
 // ========================================
 
 grid.addEventListener("click", evento => {
-    const botao = evento.target.closest("[data-add]");
+  const botao = evento.target.closest("[data-add]");
 
-    if (!botao) return;
+  if (!botao) return;
 
-    adicionarProduto(Number(botao.dataset.add));
+  adicionarProduto(Number(botao.dataset.add));
 });
 
 function adicionarProduto(id) {
-    const produto = produtos.find(item => item.id === id);
+  const produto = produtos.find(item => item.id === id);
 
-    if (!produto) return;
+  if (!produto) return;
 
-    carrinho[id] = Math.min(
-        99,
-        (carrinho[id] || 0) + 1
-    );
+  carrinho[id] = Math.min(
+    99,
+    (carrinho[id] || 0) + 1
+  );
 
-    salvarCarrinho();
-    renderizarCarrinho();
-
-    mostrarToast(`${produto.nome} adicionado ao pedido!`);
+  salvarCarrinho();
+  renderizarCarrinho();
+  mostrarToast(`${produto.nome} adicionado ao pedido!`);
 }
 
 // ========================================
-// SALVAR CARRINHO NO NAVEGADOR
+// LOCAL STORAGE
 // ========================================
 
+const CHAVE_CARRINHO = "brasa-carrinho-v2";
+
 function salvarCarrinho() {
-    try {
-        localStorage.setItem(
-            "brasa-carrinho",
-            JSON.stringify(carrinho)
-        );
-    } catch (erro) {
-        console.warn("Erro ao salvar carrinho:", erro);
-    }
+  try {
+    localStorage.setItem(
+      CHAVE_CARRINHO,
+      JSON.stringify(carrinho)
+    );
+  } catch (erro) {
+    console.warn("Erro ao salvar carrinho:", erro);
+  }
 }
 
 function carregarCarrinho() {
-    try {
-        const salvo = JSON.parse(
-            localStorage.getItem("brasa-carrinho") || "{}"
-        );
+  try {
+    const salvo = JSON.parse(
+      localStorage.getItem(CHAVE_CARRINHO) || "{}"
+    );
 
-        if (
-            !salvo ||
-            typeof salvo !== "object" ||
-            Array.isArray(salvo)
-        ) {
-            return {};
-        }
-
-        const resultado = {};
-
-        for (const [id, quantidade] of Object.entries(salvo)) {
-            if (
-                produtos.some(produto => produto.id === Number(id)) &&
-                Number.isInteger(quantidade) &&
-                quantidade > 0
-            ) {
-                resultado[id] = Math.min(quantidade, 99);
-            }
-        }
-
-        return resultado;
-    } catch {
-        return {};
+    if (
+      !salvo ||
+      typeof salvo !== "object" ||
+      Array.isArray(salvo)
+    ) {
+      return {};
     }
+
+    const resultado = {};
+
+    for (const [id, quantidade] of Object.entries(salvo)) {
+      const produtoExiste = produtos.some(
+        produto => produto.id === Number(id)
+      );
+
+      if (
+        produtoExiste &&
+        Number.isInteger(quantidade) &&
+        quantidade > 0
+      ) {
+        resultado[id] = Math.min(quantidade, 99);
+      }
+    }
+
+    return resultado;
+  } catch (erro) {
+    return {};
+  }
 }
 
 // ========================================
-// ATUALIZAR CARRINHO
+// RENDERIZAR CARRINHO
 // ========================================
 
 function renderizarCarrinho() {
-    const itens = produtos.filter(
-        produto => carrinho[produto.id] > 0
-    );
+  const itens = produtos.filter(
+    produto => carrinho[produto.id] > 0
+  );
 
-    const quantidadeTotal = itens.reduce(
-        (total, produto) =>
-            total + carrinho[produto.id],
-        0
-    );
+  const quantidadeTotal = itens.reduce(
+    (total, produto) => total + carrinho[produto.id],
+    0
+  );
 
-    const subtotal = itens.reduce(
-        (total, produto) =>
-            total + produto.preco * carrinho[produto.id],
-        0
-    );
+  const subtotal = itens.reduce(
+    (total, produto) =>
+      total + produto.preco * carrinho[produto.id],
+    0
+  );
 
-    cartCount.textContent = quantidadeTotal;
-    cartTotal.textContent = dinheiro(subtotal);
+  cartCount.textContent = quantidadeTotal;
+  cartTotal.textContent = dinheiro(subtotal);
 
-    if (itens.length === 0) {
-        cartItems.innerHTML = `
+  if (itens.length === 0) {
+    cartItems.innerHTML = `
       <p style="text-align:center;padding:35px 10px;color:#806c60">
         Seu carrinho está vazio. 🍔
-        <br>
-        Escolha seus produtos no cardápio!
+        <span style="display:block;margin-top:8px">
+          Escolha seus produtos no cardápio!
+        </span>
       </p>
     `;
-        return;
-    }
+    return;
+  }
 
-    cartItems.innerHTML = itens.map(produto => `
+  cartItems.innerHTML = itens.map(produto => `
     <div class="cart-item">
-      <span style="font-size:35px">
+      <span style="font-size:35px" aria-hidden="true">
         ${produto.emoji}
       </span>
 
       <div class="cart-item-info">
-        <h4>${produto.nome}</h4>
+        <h4>${escaparHTML(produto.nome)}</h4>
         <small>${dinheiro(produto.preco)} cada</small>
       </div>
 
       <div class="qty-controls">
         <button
+          type="button"
           data-change="${produto.id}"
           data-delta="-1"
-          aria-label="Diminuir ${produto.nome}"
+          aria-label="Diminuir ${escaparHTML(produto.nome)}"
         >−</button>
 
         <strong>${carrinho[produto.id]}</strong>
 
         <button
+          type="button"
           data-change="${produto.id}"
           data-delta="1"
-          aria-label="Aumentar ${produto.nome}"
+          aria-label="Aumentar ${escaparHTML(produto.nome)}"
         >+</button>
       </div>
     </div>
@@ -667,28 +694,36 @@ function renderizarCarrinho() {
 }
 
 // ========================================
-// AUMENTAR OU DIMINUIR QUANTIDADE
+// ALTERAR QUANTIDADE NO CARRINHO
 // ========================================
 
 cartItems.addEventListener("click", evento => {
-    const botao = evento.target.closest("[data-change]");
+  const botao = evento.target.closest("[data-change]");
 
-    if (!botao) return;
+  if (!botao) return;
 
-    const id = Number(botao.dataset.change);
-    const delta = Number(botao.dataset.delta);
+  const id = Number(botao.dataset.change);
+  const delta = Number(botao.dataset.delta);
 
-    carrinho[id] = Math.min(
-        99,
-        Math.max(0, (carrinho[id] || 0) + delta)
-    );
+  if (!produtos.some(produto => produto.id === id)) {
+    return;
+  }
 
-    if (carrinho[id] === 0) {
-        delete carrinho[id];
-    }
+  if (delta !== 1 && delta !== -1) {
+    return;
+  }
 
-    salvarCarrinho();
-    renderizarCarrinho();
+  carrinho[id] = Math.min(
+    99,
+    Math.max(0, (carrinho[id] || 0) + delta)
+  );
+
+  if (carrinho[id] === 0) {
+    delete carrinho[id];
+  }
+
+  salvarCarrinho();
+  renderizarCarrinho();
 });
 
 // ========================================
@@ -696,31 +731,31 @@ cartItems.addEventListener("click", evento => {
 // ========================================
 
 function abrirCarrinho() {
-    cartDrawer.classList.add("open");
-    cartDrawer.setAttribute("aria-hidden", "false");
-    overlay.hidden = false;
-    document.body.style.overflow = "hidden";
+  cartDrawer.classList.add("open");
+  cartDrawer.setAttribute("aria-hidden", "false");
+  overlay.hidden = false;
+  document.body.style.overflow = "hidden";
 }
 
 function fecharCarrinho() {
-    cartDrawer.classList.remove("open");
-    cartDrawer.setAttribute("aria-hidden", "true");
-    overlay.hidden = true;
-    document.body.style.overflow = "";
+  cartDrawer.classList.remove("open");
+  cartDrawer.setAttribute("aria-hidden", "true");
+  overlay.hidden = true;
+  document.body.style.overflow = "";
 }
 
 document.getElementById("openCart")
-    .addEventListener("click", abrirCarrinho);
+  .addEventListener("click", abrirCarrinho);
 
 document.getElementById("closeCart")
-    .addEventListener("click", fecharCarrinho);
+  .addEventListener("click", fecharCarrinho);
 
 overlay.addEventListener("click", fecharCarrinho);
 
 document.addEventListener("keydown", evento => {
-    if (evento.key === "Escape") {
-        fecharCarrinho();
-    }
+  if (evento.key === "Escape") {
+    fecharCarrinho();
+  }
 });
 
 // ========================================
@@ -728,72 +763,75 @@ document.addEventListener("keydown", evento => {
 // ========================================
 
 document.getElementById("checkout")
-    .addEventListener("click", () => {
+  .addEventListener("click", () => {
+    const itens = produtos.filter(
+      produto => carrinho[produto.id] > 0
+    );
 
-        const itens = produtos.filter(
-            produto => carrinho[produto.id] > 0
-        );
+    if (itens.length === 0) {
+      mostrarToast("Adicione produtos antes de finalizar.");
+      return;
+    }
 
-        if (itens.length === 0) {
-            mostrarToast("Adicione produtos antes de finalizar.");
-            return;
-        }
+    if (CONFIG.whatsapp === "5511999999999") {
+      mostrarToast("Configure o WhatsApp real no app.js.");
+      return;
+    }
 
-        if (CONFIG.whatsapp === "5511999999999") {
-            mostrarToast("Configure o WhatsApp real no app.js.");
-            return;
-        }
+    const linhas = itens.map(produto => {
+      const quantidade = carrinho[produto.id];
+      const totalProduto = produto.preco * quantidade;
 
-        const linhas = itens.map(produto => {
-            const quantidade = carrinho[produto.id];
-
-            return (
-                `• ${quantidade}x ${produto.nome} — ` +
-                dinheiro(produto.preco * quantidade)
-            );
-        });
-
-        const total = itens.reduce(
-            (soma, produto) =>
-                soma + produto.preco * carrinho[produto.id],
-            0
-        );
-
-        const mensagem = [
-            `Olá! Gostaria de fazer um pedido na ${CONFIG.nome}:`,
-            "",
-            ...linhas,
-            "",
-            `Subtotal: ${dinheiro(total)}`,
-            "",
-            "Gostaria de confirmar a disponibilidade, entrega ou retirada e o valor final."
-        ].join("\n");
-
-        const url =
-            `https://wa.me/${CONFIG.whatsapp}?text=` +
-            encodeURIComponent(mensagem);
-
-        window.open(url, "_blank", "noopener,noreferrer");
+      return `${quantidade}x ${produto.nome} — ${dinheiro(totalProduto)}`;
     });
 
+    const subtotal = itens.reduce(
+      (total, produto) =>
+        total + produto.preco * carrinho[produto.id],
+      0
+    );
+
+    const mensagem = [
+      `Olá! Gostaria de fazer um pedido na ${CONFIG.nome}:`,
+      "",
+      ...linhas,
+      "",
+      `Subtotal: ${dinheiro(subtotal)}`,
+      "",
+      "Gostaria de confirmar a disponibilidade, a entrega ou retirada e o valor final."
+    ].join("\n");
+
+    const url =
+      `https://wa.me/${CONFIG.whatsapp}?text=` +
+      encodeURIComponent(mensagem);
+
+    window.open(
+      url,
+      "_blank",
+      "noopener,noreferrer"
+    );
+  });
+
 // ========================================
-// BOTÃO DE CONTATO PELO WHATSAPP
+// BOTÃO DE CONTATO
 // ========================================
 
 const contato = document.getElementById("contactWhatsApp");
 
-contato.addEventListener("click", evento => {
-    if (CONFIG.whatsapp === "5511999999999") {
-        evento.preventDefault();
-        mostrarToast("Configure o WhatsApp real no app.js.");
-    }
-});
-
-contato.href =
+if (contato) {
+  contato.href =
     `https://wa.me/${CONFIG.whatsapp}?text=` +
     encodeURIComponent(
-        "Olá! Gostaria de saber mais sobre o cardápio."
+      "Olá! Gostaria de saber mais sobre o cardápio."
     );
+
+  contato.addEventListener("click", evento => {
+    if (CONFIG.whatsapp === "5511999999999") {
+      evento.preventDefault();
+      mostrarToast("Configure o WhatsApp real no app.js.");
+    }
+  });
+}
 
 // ========================================
 // MENU MOBILE
@@ -802,52 +840,61 @@ contato.href =
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
-menuToggle.addEventListener("click", () => {
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener("click", () => {
     const aberto = navLinks.classList.toggle("open");
 
     menuToggle.setAttribute(
-        "aria-expanded",
-        String(aberto)
+      "aria-expanded",
+      String(aberto)
     );
-});
+  });
 
-navLinks.querySelectorAll("a").forEach(link => {
+  navLinks.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", () => {
-        navLinks.classList.remove("open");
+      navLinks.classList.remove("open");
 
-        menuToggle.setAttribute(
-            "aria-expanded",
-            "false"
-        );
+      menuToggle.setAttribute(
+        "aria-expanded",
+        "false"
+      );
     });
-});
+  });
+}
 
 // ========================================
 // NOTIFICAÇÕES
 // ========================================
 
 function mostrarToast(mensagem) {
-    toast.textContent = mensagem;
-    toast.classList.add("show");
+  if (!toast) {
+    console.log(mensagem);
+    return;
+  }
 
-    clearTimeout(toastTimer);
+  toast.textContent = mensagem;
+  toast.classList.add("show");
 
-    toastTimer = setTimeout(() => {
-        toast.classList.remove("show");
-    }, 2600);
+  clearTimeout(toastTimer);
+
+  toastTimer = setTimeout(() => {
+    toast.classList.remove("show");
+  }, 2600);
 }
 
 // ========================================
-// INICIALIZAÇÃO DA APLICAÇÃO
+// INICIALIZAÇÃO
 // ========================================
 
-document.getElementById("year").textContent =
-    new Date().getFullYear();
+const year = document.getElementById("year");
+
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
 
 renderizarProdutos();
 renderizarCarrinho();
 
 console.log(
-    `Brasa Burger iniciado com ${produtos.length} produtos!`
+  `Brasa Burger iniciado com ${produtos.length} produtos!`
 );
-
