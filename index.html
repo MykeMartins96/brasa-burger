@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Brasa Burger: cardápio de hambúrgueres artesanais, combos e pedidos pelo WhatsApp.">
+  <title>Brasa Burger | Hamburgueria Artesanal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#inicio" class="logo">🔥 BRASA<span>BURGER</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="links" id="navLinks">
+        <a href="#inicio">Início</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="cart-top" id="openCart">
+        🛒 Meu pedido <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">🔥 ARTESANAL DE VERDADE</span>
+          <h1>O sabor que <span>acende</span> sua fome.</h1>
+          <p>Hambúrgueres artesanais, ingredientes selecionados e muito sabor em cada mordida.</p>
+          <div class="actions">
+            <a href="#cardapio" class="btn primary">Explorar cardápio ↗</a>
+            <a href="#sobre" class="btn secondary">Conheça a Brasa</a>
+          </div>
+          <p class="hero-note">⭐ Feito para apaixonados por hambúrguer!</p>
+        </div>
+        <div class="hero-visual">
+          <div class="orbit"></div>
+          <div class="floating-burger">🍔</div>
+          <div class="floating-fries">🍟</div>
+          <div class="floating-drink">🥤</div>
+          <span class="floating-label">100% ARTESANAL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container benefits-grid">
+        <div>🔥 <strong>Preparado na hora</strong><small>Fresquinho e saboroso</small></div>
+        <div>❤️ <strong>Ingredientes especiais</strong><small>Qualidade em cada detalhe</small></div>
+        <div>🛵 <strong>Pedido fácil</strong><small>Direto pelo WhatsApp</small></div>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="cardapio">
+      <div class="container">
+        <span class="eyebrow">NOSSO CARDÁPIO</span>
+        <h2>Escolha seu <span>próximo favorito.</span></h2>
+        <p class="section-description">Do clássico ao irresistível. Aqui cada burger tem personalidade.</p>
+
+        <div class="menu-toolbar">
+          <div class="filters" id="filters">
+            <button class="filter active" data-category="todos">Todos</button>
+            <button class="filter" data-category="burgers">🍔 Burgers</button>
+            <button class="filter" data-category="combos">🔥 Combos</button>
+            <button class="filter" data-category="acompanhamentos">🍟 Acompanhamentos</button>
+            <button class="filter" data-category="bebidas">🥤 Bebidas</button>
+            <button class="filter" data-category="sobremesas">🍰 Sobremesas</button>
+          </div>
+          <input id="searchInput" class="search" type="search" placeholder="Buscar produto..." aria-label="Buscar produto">
+        </div>
+
+        <div class="products-grid" id="productsGrid"></div>
+        <p id="emptyMessage" class="empty-message" hidden>Nenhum produto encontrado.</p>
+      </div>
+    </section>
+
+    <section class="promo">
+      <div class="container promo-grid">
+        <div>
+          <span class="eyebrow">O COMBO DA VEZ</span>
+          <h2>Mais sabor.<br><span>Mais momentos.</span></h2>
+          <p>Escolha seu combo favorito e aproveite!</p>
+          <a href="#cardapio" class="btn primary">Montar meu pedido ↗</a>
+        </div>
+        <div class="promo-art">🍟 🍔 🥤</div>
+      </div>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="container about-grid">
+        <div class="about-card">
+          <div class="about-logo">🔥<br>BRASA<br>BURGER</div>
+        </div>
+        <div>
+          <span class="eyebrow">NOSSA ESSÊNCIA</span>
+          <h2>Não é só burger.<br><span>É experiência.</span></h2>
+          <p>Uma hamburgueria feita para quem ama sabores marcantes, ingredientes de qualidade e momentos especiais.</p>
+          <p>Cada pedido é preparado com atenção para proporcionar uma experiência deliciosa.</p>
+          <a href="#contato" class="text-link">Entre em contato →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials" id="avaliacoes">
+      <div class="container">
+        <span class="eyebrow">QUEM PROVA, APROVA</span>
+        <h2>O sabor fala <span>por si.</span></h2>
+        <p class="section-description">Espaço reservado para avaliações reais dos clientes.</p>
+        <div class="reviews-grid">
+          <article class="review"><div class="stars">★★★★★</div><p>Adicione aqui uma avaliação real autorizada de um cliente.</p><strong>Avaliação de cliente</strong></article>
+          <article class="review"><div class="stars">★★★★★</div><p>Personalize esta seção com depoimentos verdadeiros do estabelecimento.</p><strong>Avaliação de cliente</strong></article>
+          <article class="review"><div class="stars">★★★★★</div><p>Depoimentos reais ajudam a transmitir confiança para novos consumidores.</p><strong>Avaliação de cliente</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow">FALE COM A GENTE</span>
+          <h2>Deu fome?<br><span>Chama na Brasa.</span></h2>
+          <p>Escolha seus produtos e envie seu pedido diretamente pelo WhatsApp.</p>
+          <div class="contact-info">
+            <p>📍 Endereço: personalize com os dados do estabelecimento</p>
+            <p>🕒 Horários: personalize com os horários reais</p>
+            <p>📱 Atendimento pelo WhatsApp</p>
+          </div>
+          <a id="contactWhatsApp" class="btn primary" href="#" target="_blank" rel="noopener noreferrer">Conversar no WhatsApp ↗</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-emoji">🍔</div>
+          <h3>Seu próximo burger favorito está te esperando.</h3>
+          <p>Escolha, adicione ao carrinho e envie seu pedido.</p>
+          <a href="#cardapio">Ver cardápio →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <strong>🔥 BRASA<span>BURGER</span></strong>
+      <p>© <span id="year"></span> Brasa Burger. Site demonstrativo.</p>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de compras" aria-hidden="true">
+    <div class="cart-header">
+      <h3>🛒 Meu pedido</h3>
+      <button id="closeCart" aria-label="Fechar carrinho">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="total-row"><strong>Subtotal</strong><strong id="cartTotal">R$ 0,00</strong></div>
+      <small>Entrega e disponibilidade serão confirmadas pelo estabelecimento.</small>
+      <button class="btn primary checkout" id="checkout">Finalizar no WhatsApp ↗</button>
+    </div>
+  </aside>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
